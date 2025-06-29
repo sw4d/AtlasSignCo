@@ -90,6 +90,7 @@
       justify-content: center;
       min-width: 0;
     }
+
     .clients-image img {
       max-width: 450px;
       width: 100%;
@@ -160,14 +161,16 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       display: block;
     }
+
     @media (max-width: 900px) {
-      .specialties-content {
+      .specialties-content,
+      .clients-content {
         flex-direction: column;
         gap: 1.5rem;
         padding: 1rem;
       }
-      .specialties-image {
-        justify-content: flex-start;
+      .clients-list ul {
+        columns: 1;
       }
     }
   </style>
@@ -207,7 +210,7 @@
           </ul>
         </div>
         <div class="specialties-image">
-          <img src="pics/pol2.jpg" class="specialties-image" alt="Hand painted sign example">
+          <img src="pics/pol1.jpg" class="specialties-image" alt="Hand painted sign example">
         </div>
       </div>
     </section>
