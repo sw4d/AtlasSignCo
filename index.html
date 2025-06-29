@@ -2,174 +2,248 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Starr Foundation Repair & Excavation – Austin, TX</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas Sign Company: Traditional Hand Painted Signs</title>
   <style>
     body {
-      font-family: system-ui, sans-serif;
+      font-family: "Gill Sans", sans-serif;;
+      background: #f6f4f0;
+      color: #2e2e2e;
       margin: 0;
       padding: 0;
-      background: #f6f8fa;
-      color: #222;
-      line-height: 1.6;
-    }
-    header, main, footer {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     header {
+      background: #f6f4f0; /* matching body background color */
+      color: #2e2e2e;      /* matching body text color for better contrast */
+      padding: 2rem 0 1rem 0;
       text-align: center;
-      border-bottom: 1px solid #eee;
+      letter-spacing: 2px;
+      font-family: "Gill Sans", sans-serif;; /* matching body font family */
     }
-    h1 {
-      margin: 0.5em 0;
-      font-size: 2rem;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: "Simplon Norm" "Stratos" "Calibre", sans-serif;; /* matching body font family */
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
     }
     h2 {
-      color: #2a4d7b;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #a57c1b;
+      letter-spacing: 1px;
     }
-    section {
-      margin-bottom: 2em;
+    .intro {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
     }
-    ul, ol {
-      margin: 0.5em 0 1em 1.5em;
+    .services {
+      margin-bottom: 2rem;
     }
-    .services-table {
+    .services ul {
+      margin: 0;
+      padding-left: 1.5rem;
+    }
+    .cta {
+      margin: 2rem 0;
+      padding: 1.2rem 0;
+      background: #f9e9c7;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #a57c1b;
+      letter-spacing: 1px;
+    }
+    .clients {
+      margin-top: 2rem;
+    }
+    .clients-section {
+      margin: 2rem 0;
+    }
+
+    .clients-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+      padding: 2rem;
+      max-width: 950px;
+      margin: 0 auto;
+      flex-direction: row; /* image left, list right */
+    }
+
+    .clients-image {
+      flex: 1 1 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+    }
+    .clients-image img {
+      max-width: 450px;
       width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 1.5em;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      display: block;
     }
-    .services-table th, .services-table td {
-      border: 1px solid #e0e0e0;
-      padding: 0.6em 1em;
-      text-align: left;
+    
+    .clients-list {
+      flex: 1 1 0;
+      min-width: 0;
     }
-    .services-table th {
-      background: #f3f7fb;
+
+    .clients-list h2 {
+      font-size: 1.5rem;
+      color: #a57c1b;
+      margin-top: 0;
     }
-    .credentials-list li {
-      margin-bottom: 0.5em;
+
+    .clients-list ul {
+      columns: 2 200px;
+      column-gap: 2rem;
+      padding-left: 1.2em;
+      margin: 0;
     }
-    @media (max-width: 600px) {
-      header, main, footer {
-        margin: 0.5rem;
-        padding: 0.5rem;
+
+    .clients-list li {
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+      position: relative;
+      list-style: disc inside;
+    }
+    .specialties-section {
+      margin: 2rem 0;
+    }
+
+    .specialties-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+      padding: 2rem;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .specialties-list {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .specialties-image {
+      flex: 1 1 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+    }
+
+    .specialties-image img {
+      max-width: 450px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .specialties-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
       }
-      .services-table th, .services-table td {
-        padding: 0.4em 0.5em;
+      .specialties-image {
+        justify-content: flex-start;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Starr Foundation Repair & Excavation</h1>
-    <p>Serving Austin and Central Texas with transparent pricing and great communication.</p>
+    <h1>Atlas Sign Company</h1>
+    <p>Traditional Hand Painted Signs</p>
   </header>
   <main>
-    <section>
-      <h2>About Us</h2>
+    <section class="intro">
       <p>
-        Starr Foundation Repair & Excavation is a trusted local business based in Austin, Texas, proudly serving the Central Texas area. We are known for our clear, up-front pricing and excellent communication with every customer.
+        <strong>Welcome to Atlas Sign Company!</strong><br>
+        Atlas Sign Co. was founded by artist and sign painter, Brendan Lenahan. Brendan began his sign painting career through an apprenticeship in Austin, Texas, and has had the pleasure of working with many old-school sign painters coast-to-coast. You can find his work across the country in cities such as Denver, Santa Fe, Austin, San Francisco, New York City, &amp; more.
+      </p>
+      <p>
+        We are now based in Albuquerque, New Mexico and ready to travel or ship no matter where you are located!
       </p>
     </section>
-
-    <section>
-      <h2>Our Services & Pricing</h2>
-      <table class="services-table">
-        <thead>
-          <tr>
-            <th>Service</th>
-            <th>Price</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tunneling / Excavation</td>
-            <td>$120 / LFT</td>
-            <td>Under normal soil conditions</td>
-          </tr>
-          <tr>
-            <td>Sewer Line Trench</td>
-            <td>$25 / LFT</td>
-            <td>24 inches depth</td>
-          </tr>
-          <tr>
-            <td>Backfill &amp; Haul-away</td>
-            <td>No charge</td>
-            <td>Included with service</td>
-          </tr>
-          <tr>
-            <td>Access Hole for Tunnel</td>
-            <td>$450</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Beam Chip-Out</td>
-            <td>$150</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Air Spading</td>
-            <td>$100 / LFT</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Engineer's Report</td>
-            <td>$450</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Minimum Charge Per Job</td>
-            <td>$1,500</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="specialties-section">
+      <div class="specialties-content">
+        <div class="specialties-list">
+          <h2>Our Specialties</h2>
+          <p>
+            We specialize in traditional hand painted signs of all sizes and styles. Our services include, but are not limited to:
+          </p>
+          <ul>
+            <li>Gold leaf</li>
+            <li>Window lettering</li>
+            <li>Wall lettering</li>
+            <li>Murals</li>
+            <li>Ghost signs</li>
+            <li>Restoration</li>
+            <li>Vehicle lettering</li>
+            <li>A-frame signs</li>
+            <li>Menu boards</li>
+          </ul>
+        </div>
+        <div class="specialties-image">
+          <img src="pics/pol2.jpg" class="specialties-image" alt="Hand painted sign example">
+        </div>
+      </div>
     </section>
-
-    <section>
-      <h2>Why Choose Starr?</h2>
+    <div class="cta">
+      Contact us today for a free quote!
+    </div>
+<section class="clients-section">
+  <div class="clients-content">
+    <div class="clients-image">
+      <img src="pics/pol2.jpg" alt="Atlas Sign Company clients">
+    </div>
+    <div class="clients-list">
+      <h2>Clients</h2>
       <ul>
-        <li>Clear, transparent pricing on every job</li>
-        <li>Excellent communication from start to finish</li>
-        <li>Locally owned and operated in Austin, TX</li>
-        <li>Serving all of Central Texas</li>
-        <li>No charge for backfill and haul-away</li>
+        <li>Patagonia</li>
+        <li>Lifetime Tattoo</li>
+        <li>Genghis Kern</li>
+        <li>Prospect Trail Barbershop</li>
+        <li>Denver Tool Library</li>
+        <li>The Craftsmen &amp; Apprentice</li>
+        <li>Starbucks</li>
+        <li>Crispin Porter Bogusky, Almond Joy</li>
+        <li>Shinola</li>
+        <li>World Tattoo</li>
+        <li>Harley Davidson - Santa Fe</li>
+        <li>Gotham Greens</li>
+        <li>The Universal</li>
+        <li>Centurylink</li>
+        <li>The Family Jones</li>
+        <li>The Ten Penny Store</li>
+        <li>Denver City Tattoo</li>
+        <li>Huckleberry Roasters</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Credentials & Documentation</h2>
-      <p>We are happy to provide the following upon request:</p>
-      <ul class="credentials-list">
-        <li>General Liability Certificate</li>
-        <li>OSHA Certifications</li>
-        <li>Contractor's Certification</li>
-        <li>W-9 Information</li>
-        <li>Detailed Pricing Worksheets</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact Us</h2>
-      <p>
-        Ready for a quote or have questions? <br>
-        <strong>Call:</strong> <a href="tel:YOUR_PHONE_NUMBER">YOUR_PHONE_NUMBER</a> <br>
-        <strong>Email:</strong> <a href="mailto:YOUR_EMAIL_ADDRESS">YOUR_EMAIL_ADDRESS</a>
-      </p>
-    </section>
+    </div>
+  </div>
+</section>
   </main>
-  <footer>
-    <p>&copy; 2025 Starr Foundation Repair & Excavation – Austin, TX</p>
-  </footer>
 </body>
 </html>
